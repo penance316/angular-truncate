@@ -49,6 +49,27 @@
         </div>
     </div>
 
+ <div class="hero-unit">
+        <h4>Example Text</h4>
+        <textarea ng-model="text" rows="3" placeholder="Enter test text"></textarea>
+        <br><br>
+        <strong>Truncate by characters with custom truncation text</strong>
+        <label>Number of characters (will not break on a word):<input ng-model="numChars" type="number"/></label>
+        <label>Break in the middle of words <input type="checkbox" ng-model="breakOnWord"/></label>
+        <label>Truncate text: <input ng-model="endString" type="text"/></label>
+
+        <h4>Output</h4>
+
+        <div class="well text-info">
+            <p>
+                {{ text | characters:numChars : breakOnWord : endString }}
+            </p>
+        </div>
+        <h4>Code</h4>
+        <pre>{<span></span>{ text | characters:{{ numChars }} : {{ breakOnWord }} : {{ endString }}<span></span>}</pre>
+    </div>
+
+
     <br><br>
     <hr/>
     <p>

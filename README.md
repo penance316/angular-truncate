@@ -33,3 +33,9 @@ By default, a _word_ will not be truncated. Set the optional boolean after the c
      {{ text | characters:25 :true}}
  </p>
  ```
+ You can specify a custom truncation text as the 3rd parameter. (note you must include the optional boolean 2nd parameter in order to use this custom string 3rd paramater.)
+ ```html
+<p>
+     {{ text | characters:25 :true :'___'}}
+</p>
+```

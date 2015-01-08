@@ -7,4 +7,5 @@ myApp.controller('demoController', function ($scope) {
     $scope.numChars = 20;
     $scope.numWords = 5;
     $scope.breakOnWord = false;
+    $scope.endString = '___';
 });
