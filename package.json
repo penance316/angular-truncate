@@ -4,8 +4,9 @@
   "description": "Angular Truncate - Ellipsis for your templates",
   "version": "0.1.3",
   "homepage": "https://github.com/penance316/angular-truncate",
-  "author": "Nero Denney", 
-    "main" : "src/truncate.js",
+  "author": "Nero Denney",
+  "originalAuthor": "Brian Matthews" 
+  "main" : "src/truncate.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/penance316/angular-truncate.git"
